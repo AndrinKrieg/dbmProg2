@@ -1,4 +1,4 @@
-**Projektidee Andrin Krieg  **
+**Projektidee Andrin Krieg**  
 
 **Ausgangslage**  
 Seit Ende September 2019 bin ich Vorstandspräsident eines Pferdesportwettbewerbs der jährlich stattfindet. Meine Aufgabe ist sehr einfach: Ich organisiere O.K. Sitzungen und muss am Eventwochenende rumlaufen und 'nach dem rechten schauen'. Das ganze (von Organisation, bis zu Anmeldung) ist das Ganze sehr veraltet und überarbeitungsbedürftig.
