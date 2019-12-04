@@ -10,8 +10,9 @@ body {
 
 h1 {
 	letter-spacing: 0.1em;
-	padding-top: 50px;
-	align-content: center;
+	padding-top: 35px;
+	align-items: center;
+	text-align: center;
 	font-weight: 300;
 }
 
@@ -27,3 +28,4 @@ h1 {
 			float: right;
 
 }
+
