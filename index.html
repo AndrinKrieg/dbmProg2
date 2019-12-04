@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+ 	<head>
+    	<meta charset="utf-8">
+    	<title>Hello</title>
+    	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    </head>
+
+ 	<body>
+		<div id="wrapper">
+	  		<div id="header">Candle in dein Head</div>
+	  		<div id="left-sidebar">side side side</div>
+	  		<div id="content">
+	  			content
+		    	<div id="inner-content">
+		    		{{ greeting }}
+		    	</div>
+	  		</div>
+	  		<div id="footer">
+	  			footer
+	  		</div>
+		</div>
+	</body>
+
+</html>
