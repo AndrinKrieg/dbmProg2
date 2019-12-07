@@ -29,9 +29,16 @@ h1 {
 
 }
 
+.new_sign_in {
+			align-content: center;
+			padding: 30px;
+
+}
+
 #linktosite {
     color: dimgrey; 
     text-align: center;
+    align-content: center;
     font-family: "Arial";
     text-decoration: none; 
     font-size: 20px;
