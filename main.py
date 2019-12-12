@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, url_for
 from libs import erfassen_reiter
+from libs import erfassen_pferdeins
 
 app = Flask(__name__)
 
@@ -7,8 +8,8 @@ app = Flask(__name__)
 def startseite():
     return render_template('index.html')
 
-@app.route("/btgstuff", methods=['GET', 'POST'])
-def btgstuff():
+@app.route("/reitererfassen", methods=['GET', 'POST'])
+def reitererfassen():
     if request.method == 'POST':
         print(request.form)
         grad = request.form['grad']
@@ -20,6 +21,13 @@ def btgstuff():
         ort = request.form['ort']
         tel = request.form['tel']
         liz_brev = request.form['liz_brev']
+        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev)
+    return render_template("reitererfassen.html")
+
+@app.route("/pferdeinserfassen", methods=['GET', 'POST'])
+def pferdeinserfassen():
+    if request.method == 'POST':
+        print(request.form)
         namepf = request.form['namepf']
         passnummer = request.form['passnummer']
         geschlecht = request.form['geschlecht']
@@ -27,18 +35,26 @@ def btgstuff():
         alter = request.form['alter']
         rasse = request.form['rasse']
         gwp = request.form['gwp']
-        preufung1 = request.form['preufung1']
-        preufung2 = request.form['preufung2']
-        preufung3 = request.form['preufung3']
-        preufung4 = request.form['preufung4']
-        preufung5 = request.form['preufung5']
-        preufung6 = request.form['preufung6']
-        preufung7 = request.form['preufung7']
-        preufung8 = request.form['preufung8']
-        preufung9 = request.form['preufung9']
-        preufung10 = request.form['preufung10']
-        preufung11 = request.form['preufung11']
-        preufung12 = request.form['preufung12']
+        pruefung1 = request.form['pruefung1']
+        pruefung2 = request.form['pruefung2']
+        pruefung3 = request.form['pruefung3']
+        pruefung4 = request.form['pruefung4']
+        pruefung5 = request.form['pruefung5']
+        pruefung6 = request.form['pruefung6']
+        pruefung7 = request.form['pruefung7']
+        pruefung8 = request.form['pruefung8']
+        pruefung9 = request.form['pruefung9']
+        pruefung10 = request.form['pruefung10']
+        pruefung11 = request.form['pruefung11']
+        pruefung12 = request.form['pruefung12']
+        returned_data = erfassen_pferdeins.pferdeins_erfassen(namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12)
+    return render_template("pferdeinserfassen.html")
+
+
+@app.route("/pferdzweiserfassen", methods=['GET', 'POST'])
+def pferdzweiserfassen():
+    if request.method == 'POST':
+        print(request.form)
         namepf2 = request.form['namepf2']
         passnummer2 = request.form['passnummer2']
         geschlecht2 = request.form['geschlecht2']
@@ -46,23 +62,22 @@ def btgstuff():
         alter2 = request.form['alter2']
         rasse2 = request.form['rasse2']
         gwp2 = request.form['gwp2']
-        preufung1pf2 = request.form['preufung1pf2']
-        preufung2pf2 = request.form['preufung2pf2']
-        preufung3pf2 = request.form['preufung3pf2']
-        preufung4pf2 = request.form['preufung4pf2']
-        preufung5pf2 = request.form['preufung5pf2']
-        preufung6pf2 = request.form['preufung6pf2']
-        preufung7pf2 = request.form['preufung7pf2']
-        preufung8pf2 = request.form['preufung8pf2']
-        preufung9pf2 = request.form['preufung9pf2']
-        preufung10pf2 = request.form['preufung10pf2']
-        preufung11pf2 = request.form['preufung11pf2']
-        preufung12pf2 = request.form['preufung12pf2']
-        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12, namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2, pruefung1pf2, pruefung2pf2, pruefung3pf2, pruefung4pf2, pruefung5pf2, pruefung6pf2, pruefung7pf2, pruefung8pf2, pruefung9pf2, pruefung10pf2, pruefung11pf2, pruefung12pf2)
-    return render_template("index.html")
+        pruefung1pf2 = request.form['pruefung1pf2']
+        pruefung2pf2 = request.form['pruefung2pf2']
+        pruefung3pf2 = request.form['pruefung3pf2']
+        pruefung4pf2 = request.form['pruefung4pf2']
+        pruefung5pf2 = request.form['pruefung5pf2']
+        pruefung6pf2 = request.form['pruefung6pf2']
+        pruefung7pf2 = request.form['pruefung7pf2']
+        pruefung8pf2 = request.form['pruefung8pf2']
+        pruefung9pf2 = request.form['pruefung9pf2']
+        pruefung10pf2 = request.form['pruefung10pf2']
+        pruefung11pf2 = request.form['pruefung11pf2']
+        pruefung12pf2 = request.form['pruefung12pf2']
+        returned_data = erfassen_pferdzwei.pferdzwei_erfassen(namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2, pruefung1pf2, pruefung2pf2, pruefung3pf2, pruefung4pf2, pruefung5pf2, pruefung6pf2, pruefung7pf2, pruefung8pf2, pruefung9pf2, pruefung10pf2, pruefung11pf2, pruefung12pf2)
+    return render_template("pferdzweierfassen.html")
 
-
-@app.route("/btgstuff")
+@app.route("/reitererfassen")
 def reiter_anmeldung_def():
     reiter_daten = erfassen_reiter.load_json()
     return render_template("index.html", daten=reiter_daten)

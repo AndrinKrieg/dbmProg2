@@ -1,6 +1,6 @@
 import json
 
-def reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev):
+def reiter_erfassen(namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12):
     
     json_daten = load_json()
     alle_anmeldungen = json_daten.get("reiter", {})

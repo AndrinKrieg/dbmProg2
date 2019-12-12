@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+ 	<head>
+    	<meta charset="utf-8"/>
+    	<meta name="title" content="Anmeldung-SPSTA"/> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    	<meta name="datum" content="29. November 2019" />
+    	<meta name="ort" content="3019 Bern" />
+    	<title>ANMELDUNG SPSTA</title>
+    	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    </head>
+
+ 	<body>
+ 			<img src="{{url_for('static', filename='btglogo.jpg')}}" class="logocss">
+ 			<img src="{{url_for('static', filename='spstalogo.png')}}" class="logospstacss">
+ 		<h1>Anmeldung <br/>
+ 		Schweizerische Pferdesport- und Traintage der Armee</h1>
+    
+<div class="container">
+ 	<form class="new_sign_in" method="POST">
+  <div class="form-group">
+ 	 	<p id="reiter">Bitte geben Sie die Daten für den Reiter ein</p>
+ 		<label for="grad">Grad</label>
+ 		<input type="text" name="grad" placeholder="Grad"><br/>
+ 		<label for="name">Name</label>
+ 		<input type="text" name="name" placeholder="Name"><br/>
+ 		<label for="vorname">Vorname</label>
+ 		<input type="text" name="vorname" placeholder="Vorname"><br/>
+ 		<label for="jahrgang">Jahrgang</label>
+ 		<input type="text" name="jahrgang" placeholder="Jahrgang"><br/>
+ 		<label for="adresse">Adresse</label>
+ 		<input type="text" name="adresse" placeholder="Adresse"><br/>
+ 		<label for="plz">PLZ</label>
+ 		<input type="text" name="plz"placeholder="PLZ"><br/>
+ 		<label for="ort">Ort</label>
+ 		<input type="text" name="ort" placeholder="Ort"><br/>
+ 		<label for="tel">Tel. Nr.</label>
+ 		<input type="text" name="tel" placeholder="Tel. Nr."><br/>
+ 		<label for="liz_brev">Lizenz oder Brevet Nr.</label>
+ 		<input type="text" name="liz_brev" placeholder="Lizenz oder Brevet Nr."><br/>
+
+
+      <input type="submit" id="linktosite" name="" value="Absenden" class="btn-add">
+</div>
+</form>
+</div>
+
+	</body>
+
+</html>
