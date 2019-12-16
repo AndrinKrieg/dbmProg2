@@ -39,8 +39,7 @@ def reitererfassen():
         pruefung10 = "ja" if len(request.form.getlist("pruefung10")) > 0 else "nein"
         pruefung11 = "ja" if len(request.form.getlist("pruefung11")) > 0 else "nein"
         pruefung12 = "ja" if len(request.form.getlist("pruefung12")) > 0 else "nein"
-        
-        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12)
+        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12)
     return render_template("reitererfassen.html")
 
 @app.route("/anmeldeliste")

@@ -25,12 +25,12 @@ h2 {
 
 .logocss {
 			margin: 20px;
-			width: 100px;
+			width: 150px;
 			float: left;
 
 }
 .logospstacss {
-			margin: 20px;
+			margin: 40px;
 			width: 250px;
 			float: right;
 
@@ -60,11 +60,10 @@ h2 {
 }
 
 
-/Für ufde Index Site "smenu" chasch aso nach dim gusto css mache/
 .links a {
     text-decoration: none;
     color: black;
-    margin: 50px;
+    margin: 90px;
 }
 
 .links a:hover {
@@ -117,4 +116,10 @@ th:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.form-group-checkbox {
+	padding: 20px;
+	align-content: left;
+	text-align: left;
 }
