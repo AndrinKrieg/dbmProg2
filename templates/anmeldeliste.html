@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+ 	<head>
+    	<meta charset="utf-8"/>
+    	<meta name="title" content="Anmeldung-SPSTA"/> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    	<meta name="datum" content="29. November 2019" />
+    	<meta name="ort" content="3019 Bern" />
+    	<title>ANMELDUNG SPSTA</title>
+    	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    </head>
+ 	<body>
+ 			<img src="{{url_for('static', filename='btglogo.jpg')}}" class="logocss">
+ 			<img src="{{url_for('static', filename='spstalogo.png')}}" class="logospstacss">
+ 		<h1>Anmeldeliste <br/>
+ 		Schweizerische Pferdesport- und Traintage der Armee</h1>    
+
+    <div class="links">
+        <a href="{{ url_for('startseite') }}">Homepage</a>
+        <a href="{{ url_for('reitererfassen') }}">Beginne die Anmeldung</a>
+        <a href="{{ url_for('anmeldeliste') }}" class="active">Anmeldeliste</a>
+    </div>
+<br>
+<h2>Erfasste Reiter</h2>
+{%if daten%}
+  <table>
+            <tr>
+                <th>Grad</th>
+                <th>Name</th>
+                <th>Vorname</th>
+                <th>Jahrgang</th>
+                <th>Adresse</th>
+                <th>PLZ</th>
+                <th>Ort</th>
+                <th>Tel. Nr.</th>
+                <th>Lizenz oder Brevet Nr.</th>           
+            </tr>
+            
+                {% for einreiter in daten['reiter'].values()%}
+                <tr>
+                  <td>{{einreiter['grad']}}</td> 
+                  <td>{{einreiter['name']}}</td>  
+                  <td>{{einreiter['vorname']}}</td> 
+                  <td>{{einreiter['jahrgang']}}</td>  
+                  <td>{{einreiter['adresse']}}</td> 
+                  <td>{{einreiter['plz']}}</td>  
+                  <td>{{einreiter['ort']}}</td> 
+                  <td>{{einreiter['tel']}}</td>  
+                  <td>{{einreiter['liv_brev']}}</td>
+
+                </tr>
+                {% endfor %}
+            
+    </table>
+    {% else %}
+    <h1>Keine Anmeldungen erfasst</h1>
+    {% endif %}
+
+<h2>Pferde 1</h2>
+{%if daten%}
+  <table>
+    <tr>
+                <th>Name</th>
+                <th>Passnummer</th>
+                <th>Geschlecht</th>
+                <th>Farbe</th>
+                <th>Alter</th>
+                <th>Rasse</th>
+                <th>Gewinnpunkte</th>
+                <th>Name</th>
+                <th>Passnummer</th>
+                <th>Geschlecht</th>
+                <th>Farbe</th>
+                <th>Alter</th>
+                <th>Rasse</th>
+                <th>Gewinnpunkte</th>  
+    </tr>
+                    {% for einreiter in daten['reiter'].values()%}
+                <tr>
+                  <td>{{einreiter['namepf']}}</td> 
+                  <td>{{einreiter['passnummer']}}</td>  
+                  <td>{{einreiter['geschlecht']}}</td> 
+                  <td>{{einreiter['farbe']}}</td>  
+                  <td>{{einreiter['alter']}}</td> 
+                  <td>{{einreiter['rasse']}}</td>  
+                  <td>{{einreiter['gwp']}}</td> 
+                </tr>
+                {% endfor %}
+    </table>
+    {% else %}
+    <h1>Keine Anmeldungen erfasst</h1>
+    {% endif %}
+
+  </table>
+
+<h2>Pferde 2</h2>
+{%if daten%}
+  <table>
+    <tr>
+                <th>Name</th>
+                <th>Passnummer</th>
+                <th>Geschlecht</th>
+                <th>Farbe</th>
+                <th>Alter</th>
+                <th>Rasse</th>
+                <th>Gewinnpunkte</th>
+                <th>Name</th>
+                <th>Passnummer</th>
+                <th>Geschlecht</th>
+                <th>Farbe</th>
+                <th>Alter</th>
+                <th>Rasse</th>
+                <th>Gewinnpunkte</th>  
+    </tr>
+                    {% for einreiter in daten['reiter'].values()%}
+                <tr>
+                  <td>{{einreiter['namepf2']}}</td> 
+                  <td>{{einreiter['passnummer2']}}</td>  
+                  <td>{{einreiter['geschlecht2']}}</td> 
+                  <td>{{einreiter['farbe2']}}</td>  
+                  <td>{{einreiter['alter2']}}</td> 
+                  <td>{{einreiter['rasse2']}}</td>  
+                  <td>{{einreiter['gwp2']}}</td> 
+                </tr>
+                {% endfor %}
+    </table>
+    {% else %}
+    <h1>Keine Anmeldungen erfasst</h1>
+    {% endif %}
+
+  </table>
+	</body>
+
+</html>

@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, request, url_for
 from libs import erfassen_reiter
-from libs import erfassen_pferdeins
 
 app = Flask(__name__)
 
@@ -21,13 +20,6 @@ def reitererfassen():
         ort = request.form['ort']
         tel = request.form['tel']
         liz_brev = request.form['liz_brev']
-        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev)
-    return render_template("reitererfassen.html")
-
-@app.route("/pferdeinserfassen", methods=['GET', 'POST'])
-def pferdeinserfassen():
-    if request.method == 'POST':
-        print(request.form)
         namepf = request.form['namepf']
         passnummer = request.form['passnummer']
         geschlecht = request.form['geschlecht']
@@ -35,26 +27,18 @@ def pferdeinserfassen():
         alter = request.form['alter']
         rasse = request.form['rasse']
         gwp = request.form['gwp']
-        pruefung1 = request.form['pruefung1']
-        pruefung2 = request.form['pruefung2']
-        pruefung3 = request.form['pruefung3']
-        pruefung4 = request.form['pruefung4']
-        pruefung5 = request.form['pruefung5']
-        pruefung6 = request.form['pruefung6']
-        pruefung7 = request.form['pruefung7']
-        pruefung8 = request.form['pruefung8']
-        pruefung9 = request.form['pruefung9']
-        pruefung10 = request.form['pruefung10']
-        pruefung11 = request.form['pruefung11']
-        pruefung12 = request.form['pruefung12']
-        returned_data = erfassen_pferdeins.pferdeins_erfassen(namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12)
-    return render_template("pferdeinserfassen.html")
-
-
-@app.route("/pferdzweiserfassen", methods=['GET', 'POST'])
-def pferdzweiserfassen():
-    if request.method == 'POST':
-        print(request.form)
+        pruefung1 = "ja" if len(request.form.getlist("pruefung1")) > 0 else "nein"
+        pruefung2 = "ja" if len(request.form.getlist("pruefung2")) > 0 else "nein"
+        pruefung3 = "ja" if len(request.form.getlist("pruefung3")) > 0 else "nein"
+        pruefung4 = "ja" if len(request.form.getlist("pruefung4")) > 0 else "nein"
+        pruefung5 = "ja" if len(request.form.getlist("pruefung5")) > 0 else "nein"
+        pruefung6 = "ja" if len(request.form.getlist("pruefung6")) > 0 else "nein"
+        pruefung7 = "ja" if len(request.form.getlist("pruefung7")) > 0 else "nein"
+        pruefung8 = "ja" if len(request.form.getlist("pruefung8")) > 0 else "nein"
+        pruefung9 = "ja" if len(request.form.getlist("pruefung9")) > 0 else "nein"
+        pruefung10 = "ja" if len(request.form.getlist("pruefung10")) > 0 else "nein"
+        pruefung11 = "ja" if len(request.form.getlist("pruefung11")) > 0 else "nein"
+        pruefung12 = "ja" if len(request.form.getlist("pruefung12")) > 0 else "nein"
         namepf2 = request.form['namepf2']
         passnummer2 = request.form['passnummer2']
         geschlecht2 = request.form['geschlecht2']
@@ -62,25 +46,26 @@ def pferdzweiserfassen():
         alter2 = request.form['alter2']
         rasse2 = request.form['rasse2']
         gwp2 = request.form['gwp2']
-        pruefung1pf2 = request.form['pruefung1pf2']
-        pruefung2pf2 = request.form['pruefung2pf2']
-        pruefung3pf2 = request.form['pruefung3pf2']
-        pruefung4pf2 = request.form['pruefung4pf2']
-        pruefung5pf2 = request.form['pruefung5pf2']
-        pruefung6pf2 = request.form['pruefung6pf2']
-        pruefung7pf2 = request.form['pruefung7pf2']
-        pruefung8pf2 = request.form['pruefung8pf2']
-        pruefung9pf2 = request.form['pruefung9pf2']
-        pruefung10pf2 = request.form['pruefung10pf2']
-        pruefung11pf2 = request.form['pruefung11pf2']
-        pruefung12pf2 = request.form['pruefung12pf2']
-        returned_data = erfassen_pferdzwei.pferdzwei_erfassen(namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2, pruefung1pf2, pruefung2pf2, pruefung3pf2, pruefung4pf2, pruefung5pf2, pruefung6pf2, pruefung7pf2, pruefung8pf2, pruefung9pf2, pruefung10pf2, pruefung11pf2, pruefung12pf2)
-    return render_template("pferdzweierfassen.html")
+        pruefung1pf2 = "ja" if len(request.form.getlist("pruefung1pf2")) > 0 else "nein"
+        pruefung2pf2 = "ja" if len(request.form.getlist("pruefung2pf2")) > 0 else "nein"
+        pruefung3pf2 = "ja" if len(request.form.getlist("pruefung3pf2")) > 0 else "nein"
+        pruefung4pf2 = "ja" if len(request.form.getlist("pruefung4pf2")) > 0 else "nein"
+        pruefung5pf2 = "ja" if len(request.form.getlist("pruefung5pf2")) > 0 else "nein"
+        pruefung6pf2 = "ja" if len(request.form.getlist("pruefung6pf2")) > 0 else "nein"
+        pruefung7pf2 = "ja" if len(request.form.getlist("pruefung7pf2")) > 0 else "nein"
+        pruefung8pf2 = "ja" if len(request.form.getlist("pruefung8pf2")) > 0 else "nein"
+        pruefung9pf2 = "ja" if len(request.form.getlist("pruefung9pf2")) > 0 else "nein"
+        pruefung10pf2 = "ja" if len(request.form.getlist("pruefung10pf2")) > 0 else "nein"
+        pruefung11pf2 = "ja" if len(request.form.getlist("pruefung11pf2")) > 0 else "nein"
+        pruefung12pf2 = "ja" if len(request.form.getlist("pruefung12pf2")) > 0 else "nein"
 
-@app.route("/reitererfassen")
-def reiter_anmeldung_def():
+        returned_data = erfassen_reiter.reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2)
+    return render_template("reitererfassen.html")
+
+@app.route("/anmeldeliste")
+def anmeldeliste():
     reiter_daten = erfassen_reiter.load_json()
-    return render_template("index.html", daten=reiter_daten)
+    return render_template("anmeldeliste.html", daten=reiter_daten)
     
-if __name__ == "__main__":
+if __name__== "__main__":
     app.run(debug=True, port=5000)
