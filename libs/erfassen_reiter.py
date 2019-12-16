@@ -1,6 +1,6 @@
 import json
 
-def reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2):
+def reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, namepf2, passnummer2, geschlecht2, farbe2, alter2, rasse2, gwp2, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12):
     
     json_daten = load_json()
     alle_anmeldungen = json_daten.get("reiter", {})
@@ -28,9 +28,21 @@ def reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_b
         "alter2": alter2, 
         "rasse2": rasse2, 
         "gwp2": gwp2, 
+        "pruefung1": pruefung1, 
+        "pruefung2": pruefung2, 
+        "pruefung3": pruefung3,
+        "pruefung4": pruefung4, 
+        "pruefung5": pruefung5, 
+        "pruefung6": pruefung6, 
+        "pruefung7": pruefung7, 
+        "pruefung8": pruefung8, 
+        "pruefung9": pruefung9, 
+        "pruefung10": pruefung10, 
+        "pruefung11": pruefung11, 
+        "pruefung12": pruefung12
     }
         
-    alle_anmeldungen[grad] = einreiter
+    alle_anmeldungen[passnummer] = einreiter
         
     json_daten["reiter"] = alle_anmeldungen
 
@@ -52,41 +64,3 @@ def load_json():
 def save_to_json(daten):
     with open('data/data.json', "w") as open_file:
         json.dump(daten, open_file)
-
-"""
-
-pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12
-"""
-
-"""
-        "pruefung1": pruefung1, 
-        "pruefung2": pruefung2, 
-        "pruefung3": pruefung3,
-        "pruefung4": pruefung4, 
-        "pruefung5": pruefung5, 
-        "pruefung6": pruefung6, 
-        "pruefung7": pruefung7, 
-        "pruefung8": pruefung8, 
-        "pruefung9": pruefung9, 
-        "pruefung10": pruefung10, 
-        "pruefung11": pruefung11, 
-        "pruefung12": pruefung12
-"""
-"""
-pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12
-"""
-
-"""
-        "pruefung1": pruefung1, 
-        "pruefung2": pruefung2, 
-        "pruefung3": pruefung3,
-        "pruefung4": pruefung4, 
-        "pruefung5": pruefung5, 
-        "pruefung6": pruefung6, 
-        "pruefung7": pruefung7, 
-        "pruefung8": pruefung8, 
-        "pruefung9": pruefung9, 
-        "pruefung10": pruefung10, 
-        "pruefung11": pruefung11, 
-        "pruefung12": pruefung12
-"""

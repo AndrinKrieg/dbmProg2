@@ -18,7 +18,7 @@
  		Schweizerische Pferdesport- und Traintage der Armee</h1>    
 
     <div class="links">
-        <a href="{{ url_for('startseite') }}">Homepage</a>
+        <a href="https://bernertrain.jimdo.com/pferdesport-traintage/" class="active">Homepage</a>
         <a href="{{ url_for('reitererfassen') }}">Beginne die Anmeldung</a>
         <a href="{{ url_for('anmeldeliste') }}" class="active">Anmeldeliste</a>
     </div>
@@ -58,7 +58,7 @@
     <h1>Keine Anmeldungen erfasst</h1>
     {% endif %}
 
-<h2>Pferde 1</h2>
+<h2>Pferd 1</h2>
 {%if daten%}
   <table>
     <tr>
@@ -68,14 +68,20 @@
                 <th>Farbe</th>
                 <th>Alter</th>
                 <th>Rasse</th>
-                <th>Gewinnpunkte</th>
-                <th>Name</th>
-                <th>Passnummer</th>
-                <th>Geschlecht</th>
-                <th>Farbe</th>
-                <th>Alter</th>
-                <th>Rasse</th>
-                <th>Gewinnpunkte</th>  
+                <th>Gewinnpunkte</th> 
+                <th>Prüfung 1</th>
+                <th>Prüfung 2</th>
+                <th>Prüfung 3</th>
+                <th>Prüfung 4</th>
+                <th>Prüfung 5</th>
+                <th>Prüfung 6</th>
+                <th>Prüfung 7</th>
+                <th>Prüfung 8</th>
+                <th>Prüfung 9</th>
+                <th>Prüfung 10</th>
+                <th>Prüfung 11</th>
+                <th>Prüfung 12</th>
+
     </tr>
                     {% for einreiter in daten['reiter'].values()%}
                 <tr>
@@ -86,6 +92,18 @@
                   <td>{{einreiter['alter']}}</td> 
                   <td>{{einreiter['rasse']}}</td>  
                   <td>{{einreiter['gwp']}}</td> 
+                  <td>{{einreiter['pruefung1']}}</td>
+                  <td>{{einreiter['pruefung2']}}</td>
+                  <td>{{einreiter['pruefung3']}}</td>
+                  <td>{{einreiter['pruefung4']}}</td>
+                  <td>{{einreiter['pruefung5']}}</td>
+                  <td>{{einreiter['pruefung6']}}</td>
+                  <td>{{einreiter['pruefung7']}}</td>
+                  <td>{{einreiter['pruefung8']}}</td>
+                  <td>{{einreiter['pruefung9']}}</td>
+                  <td>{{einreiter['pruefung10']}}</td>
+                  <td>{{einreiter['pruefung11']}}</td>
+                  <td>{{einreiter['pruefung12']}}</td>
                 </tr>
                 {% endfor %}
     </table>
@@ -93,44 +111,7 @@
     <h1>Keine Anmeldungen erfasst</h1>
     {% endif %}
 
-  </table>
 
-<h2>Pferde 2</h2>
-{%if daten%}
-  <table>
-    <tr>
-                <th>Name</th>
-                <th>Passnummer</th>
-                <th>Geschlecht</th>
-                <th>Farbe</th>
-                <th>Alter</th>
-                <th>Rasse</th>
-                <th>Gewinnpunkte</th>
-                <th>Name</th>
-                <th>Passnummer</th>
-                <th>Geschlecht</th>
-                <th>Farbe</th>
-                <th>Alter</th>
-                <th>Rasse</th>
-                <th>Gewinnpunkte</th>  
-    </tr>
-                    {% for einreiter in daten['reiter'].values()%}
-                <tr>
-                  <td>{{einreiter['namepf2']}}</td> 
-                  <td>{{einreiter['passnummer2']}}</td>  
-                  <td>{{einreiter['geschlecht2']}}</td> 
-                  <td>{{einreiter['farbe2']}}</td>  
-                  <td>{{einreiter['alter2']}}</td> 
-                  <td>{{einreiter['rasse2']}}</td>  
-                  <td>{{einreiter['gwp2']}}</td> 
-                </tr>
-                {% endfor %}
-    </table>
-    {% else %}
-    <h1>Keine Anmeldungen erfasst</h1>
-    {% endif %}
-
-  </table>
 	</body>
 
 </html>
