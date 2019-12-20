@@ -42,23 +42,6 @@ h2 {
 
 }
 
-#linktosite {
-    color: dimgrey; 
-    text-align: center;
-    align-content: center;
-    font-family: "Arial";
-    text-decoration: none; 
-    font-size: 20px;
-    padding: 30px;
-    height: 70px;
-    top: 10px; 
-    
-    border: solid 2px;
-    border-radius: 1px;
-    padding: 5px 5px;
-    transition-duration: 100ms;
-}
-
 
 .links a {
     text-decoration: none;
@@ -73,7 +56,14 @@ h2 {
 
 .anmeldeform {
 	margin-bottom: 10px;
-	margin-top: 5px;	
+	margin-top: 5px;
+	text-decoration: none;
+    padding: 7px;
+    display: inline-block;
+    cursor: pointer;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;	
 }
 
 .active {
@@ -124,10 +114,26 @@ th:after {
 	text-align: left;
 }
 
-.h3	{
-	padding-bottom: 30px;
-	text-transform: capitalize;
-	font-family: Arial,sans-serif;
-	letter-spacing: 0.1em;
+.reihen {
+    text-align: left;
+    align-content: left;
+    padding-left: 95px;
+}
 
+.btn-add {
+    text-decoration: none;
+    padding: 15px;
+    color: white; 
+    background-color: black;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    font-size: 20px;
+    border: none;
+}
+
+.checking {
+    margin-bottom: 25px;
 }
