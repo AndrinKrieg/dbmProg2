@@ -23,7 +23,7 @@
         <a href="{{ url_for('anmeldeliste') }}" class="active">Anmeldeliste</a>
     </div>
 <br>
-<h2>Erfasste Reiter</h2>
+<h2>Erfasste Anmeldungen: <span class="anzanmeldungen">{{ daten['reiter']|length }}</span></h2>
 {%if daten%}
   <table>
             <tr>

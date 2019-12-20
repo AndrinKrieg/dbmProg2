@@ -32,23 +32,23 @@
                 <div class="form-group reihen">
                     <h3>Reiter</h3>
 
-                    <input type="text" name="grad" placeholder="Grad" class="anmeldeform"><br/>
+                    <input type="text" name="grad" placeholder="Grad" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="name" placeholder="Nachname" class="anmeldeform"><br/>
+                    <input type="text" name="name" placeholder="Nachname" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="vorname" placeholder="Vorname" class="anmeldeform"><br/>
+                    <input type="text" name="vorname" placeholder="Vorname" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="jahrgang" placeholder="Jahrgang" class="anmeldeform"><br/>
+                    <input type="text" name="jahrgang" placeholder="Jahrgang" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="adresse" placeholder="Adresse" class="anmeldeform"><br/>
+                    <input type="text" name="adresse" placeholder="Adresse" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="plz"placeholder="PLZ" class="anmeldeform"><br/>
+                    <input type="text" name="plz"placeholder="PLZ" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="ort" placeholder="Ort" class="anmeldeform"><br/>
+                    <input type="text" name="ort" placeholder="Ort" class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="tel" placeholder="Tel. Nr." class="anmeldeform"><br/>
+                    <input type="text" name="tel" placeholder="Tel. Nr." class="anmeldeform" required><br/>
                     <br>
-                    <input type="text" name="liz_brev" placeholder="Lizenz oder Brevet Nr." class="anmeldeform"><br/>
+                    <input type="text" name="liz_brev" placeholder="Lizenz oder Brevet Nr." class="anmeldeform" required><br/>
                 </div>
             
     </div>
@@ -57,19 +57,19 @@
         <div class="container">
         <div class="form-group reihen">
             <h3>Pferd</h3>
-            <input type="text" name="namepf" placeholder="Name" class="anmeldeform"><br/>
+            <input type="text" name="namepf" placeholder="Name" class="anmeldeform" required><br/>
             <br/>
             <input type="text" name="passnummer" placeholder="Passnummer"class="anmeldeform" required><br/>
             <br/>
-            <input type="text" name="geschlecht" placeholder="Geschlecht" class="anmeldeform"><br/>
+            <input type="text" name="geschlecht" placeholder="Geschlecht" class="anmeldeform" required><br/>
             <br/>
-            <input type="text" name="farbe" placeholder="Farbe" class="anmeldeform"><br/>
+            <input type="text" name="farbe" placeholder="Farbe" class="anmeldeform" required><br/>
             <br/>
-            <input type="text" name="alter"placeholder="Alter" class="anmeldeform"><br/>
+            <input type="text" name="alter"placeholder="Alter" class="anmeldeform" required><br/>
             <br/>
-            <input type="text" name="rasse" placeholder="Rasse" class="anmeldeform"><br/>
+            <input type="text" name="rasse" placeholder="Rasse" class="anmeldeform" required><br/>
             <br/>
-            <input type="text" name="gwp" placeholder="Gewinnpunkte" class="anmeldeform"><br/>
+            <input type="text" name="gwp" placeholder="Gewinnpunkte" class="anmeldeform" required><br/>
             <label style="font-size: 12px;">(Laufendes und letztes Jahr)</label>
         </div>
 </div>
@@ -92,48 +92,10 @@
             <label><input type="checkbox" class="checking" name="pruefung12" value="nr12">&nbsp;&nbsp;Prüfung 12:&nbsp;&nbsp; &nbsp;Trainwettkampf<br/></label>
             <br/>
 
-          <input type="submit" name="" id="myModal" value="Absenden" class="btn-add">
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-
+          <input type="submit" name="" value="Absenden" class="btn-add">
         </div>
 </div>
     </div>
-
-    <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
    </form>
     </body>
 
