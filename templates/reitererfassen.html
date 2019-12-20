@@ -19,43 +19,34 @@
         Schweizerische Pferdesport- und Traintage der Armee</h1>
     
     <div class="links">
-        <a href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage</a>
+        <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage BTG</a>
         <a href="{{ url_for('reitererfassen') }}" class="active">Beginne die Anmeldung</a>
         <a href="{{ url_for('anmeldeliste') }}">Anmeldeliste</a>
     </div>
 
-    <h2>Bitte geben Sie die notwendigen Daten ein:</h2>
+<h2>Bitte geben Sie die notwendigen Daten ein:</h2>
 <form class="new_sign_in" method="POST">
 <div class="row">
     <div class="column">
     <div class="container">
-                <div class="form-group">
-                    <p class="reiter">Reiter</p>
-                    <label for="grad">Grad</label> 
-                    <br>
+                <div class="form-group reihen">
+                    <h3>Reiter</h3>
+
                     <input type="text" name="grad" placeholder="Grad" class="anmeldeform"><br/>
-                    <label for="name">Name</label>
                     <br>
-                    <input type="text" name="name" placeholder="Name" class="anmeldeform"><br/>
-                    <label for="vorname">Vorname</label>
+                    <input type="text" name="name" placeholder="Nachname" class="anmeldeform"><br/>
                     <br>
                     <input type="text" name="vorname" placeholder="Vorname" class="anmeldeform"><br/>
-                    <label for="jahrgang">Jahrgang</label>
                     <br>
                     <input type="text" name="jahrgang" placeholder="Jahrgang" class="anmeldeform"><br/>
-                    <label for="adresse">Adresse</label>
                     <br>
                     <input type="text" name="adresse" placeholder="Adresse" class="anmeldeform"><br/>
-                    <label for="plz">PLZ</label>
                     <br>
                     <input type="text" name="plz"placeholder="PLZ" class="anmeldeform"><br/>
-                    <label for="ort">Ort</label>
                     <br>
                     <input type="text" name="ort" placeholder="Ort" class="anmeldeform"><br/>
-                    <label for="tel">Tel. Nr.</label>
                     <br>
                     <input type="text" name="tel" placeholder="Tel. Nr." class="anmeldeform"><br/>
-                    <label for="liz_brev">Lizenz oder Brevet Nr.</label>
                     <br>
                     <input type="text" name="liz_brev" placeholder="Lizenz oder Brevet Nr." class="anmeldeform"><br/>
                 </div>
@@ -64,52 +55,43 @@
     </div>
     <div class="column">
         <div class="container">
-        <div class="form-group">
-            <p class="pferd1">Pferd</p>
-            <label for="namepf">Name</label>
-            <br/>
+        <div class="form-group reihen">
+            <h3>Pferd</h3>
             <input type="text" name="namepf" placeholder="Name" class="anmeldeform"><br/>
-            <label for="passnummer">Passnummer</label>
             <br/>
-            <input type="text" name="passnummer" placeholder="Passnummer"class="anmeldeform"><br/>
-            <label for="geschlecht">Geschlecht</label>
+            <input type="text" name="passnummer" placeholder="Passnummer"class="anmeldeform" required><br/>
             <br/>
             <input type="text" name="geschlecht" placeholder="Geschlecht" class="anmeldeform"><br/>
-            <label for="farbe">Farbe</label>
             <br/>
             <input type="text" name="farbe" placeholder="Farbe" class="anmeldeform"><br/>
-            <label for="alter">Alter</label>
             <br/>
             <input type="text" name="alter"placeholder="Alter" class="anmeldeform"><br/>
-            <label for="rasse">Rasse</label>
             <br/>
             <input type="text" name="rasse" placeholder="Rasse" class="anmeldeform"><br/>
-            <label for=gwp>Gewinnpunkte (laufendes und letztes Jahr)</label>
             <br/>
             <input type="text" name="gwp" placeholder="Gewinnpunkte" class="anmeldeform"><br/>
+            <label style="font-size: 12px;">(Laufendes und letztes Jahr)</label>
         </div>
 </div>
 </div>
 <div class="column">
     <div class="container">
-    <div class="form-group-checkbox">
-            <label for="pfnr">Prüfungsnummer</label><br/>
-            <input type="checkbox" name="pruefung1" value="nr1">Prüfung 1: Dressur Stufe 1<br/>
-            <input type="checkbox" name="pruefung2" value="nr2">Prüfung 2: Dressur Stufe 2<br/>
-            <input type="checkbox" name="pruefung3" value="nr3">Prüfung 3: Springen Stufe 1<br/>
-            <input type="checkbox" name="pruefung4" value="nr4">Prüfung 4: Springen Stufe 2<br/>
-            <input type="checkbox" name="pruefung5" value="nr5">Prüfung 5: Derby Stufe 1<br/>
-            <input type="checkbox" name="pruefung6" value="nr6">Prüfung 6: Derby Stufe 2<br/>
-            <input type="checkbox" name="pruefung7" value="nr7">Prüfung 7: Equipenspringen<br/>
-            <input type="checkbox" name="pruefung8" value="nr8">Prüfung 8: Kombi Stufe 1<br/>
-            <input type="checkbox" name="pruefung9" value="nr9">Prüfung 9: Kombi Stufe 2<br/>
-            <input type="checkbox" name="pruefung10" value="nr10">Prüfung 10: Helferspringen<br/>
-            <input type="checkbox" name="pruefung11" value="nr11">Prüfung 11: Fahrprüfung<br/>
-            <input type="checkbox" name="pruefung12" value="nr12">Prüfung 12: Trainwettkampf<br/>
+    <div class="form-group reihen">
+            <h3>Prüfungsnummer</h3>
+            <label><input type="checkbox" class="checking" name="pruefung1" value="nr1">&nbsp;&nbsp;Prüfung 1:&nbsp;&nbsp; &nbsp;&nbsp; Dressur Stufe 1<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung2" value="nr2">&nbsp;&nbsp;Prüfung 2:&nbsp;&nbsp; &nbsp;&nbsp; Dressur Stufe 2<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung3" value="nr3">&nbsp;&nbsp;Prüfung 3:&nbsp;&nbsp; &nbsp;&nbsp; Springen Stufe 1<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung4" value="nr4">&nbsp;&nbsp;Prüfung 4:&nbsp;&nbsp; &nbsp;&nbsp; Springen Stufe 2<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung5" value="nr5">&nbsp;&nbsp;Prüfung 5:&nbsp;&nbsp; &nbsp;&nbsp; Derby Stufe 1<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung6" value="nr6">&nbsp;&nbsp;Prüfung 6:&nbsp;&nbsp; &nbsp;&nbsp; Derby Stufe 2<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung7" value="nr7">&nbsp;&nbsp;Prüfung 7:&nbsp;&nbsp; &nbsp;&nbsp; Equipenspringen<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung8" value="nr8">&nbsp;&nbsp;Prüfung 8:&nbsp;&nbsp; &nbsp;&nbsp; Kombi Stufe 1<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung9" value="nr9">&nbsp;&nbsp;Prüfung 9:&nbsp;&nbsp; &nbsp;&nbsp; Kombi Stufe 2<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung10" value="nr10">&nbsp;&nbsp;Prüfung 10:&nbsp;&nbsp;&nbsp; Helferspringen<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung11" value="nr11">&nbsp;&nbsp;Prüfung 11:&nbsp; &nbsp;&nbsp; Fahrprüfung<br/></label>
+            <label><input type="checkbox" class="checking" name="pruefung12" value="nr12">&nbsp;&nbsp;Prüfung 12:&nbsp;&nbsp; &nbsp;Trainwettkampf<br/></label>
             <br/>
-
-
-          <input type="submit" id="linktosite" name="" value="Absenden" class="btn-add">
+          <input type="submit" name="" value="Absenden" class="btn-add">
         </div>
 </div>
     </div>

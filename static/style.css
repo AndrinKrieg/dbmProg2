@@ -123,3 +123,11 @@ th:after {
 	align-content: left;
 	text-align: left;
 }
+
+.h3	{
+	padding-bottom: 30px;
+	text-transform: capitalize;
+	font-family: Arial,sans-serif;
+	letter-spacing: 0.1em;
+
+}
