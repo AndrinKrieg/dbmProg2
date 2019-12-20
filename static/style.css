@@ -23,6 +23,14 @@ h2 {
     margin-bottom: 0px;
 }
 
+
+h3 {
+	letter-spacing: 0.1em;
+	padding-top: 35px;	
+	align-items: left;
+	text-align: left;
+}
+
 .logocss {
 			margin: 20px;
 			width: 150px;
@@ -49,9 +57,6 @@ h2 {
     margin: 90px;
 }
 
-.links a:hover {
-    text-decoration: underline;
-}
 
 
 .anmeldeform {
@@ -67,7 +72,12 @@ h2 {
 }
 
 .active {
-	background-color: yellow;
+	background-color: grey;
+}
+
+.active:hover {
+	color: white;
+	transition-duration: 100ms;
 }
 
 table { 
@@ -98,7 +108,7 @@ th:after {
   float: left;
   width: 30%;
   padding: 10px;
-  height: 300px;
+  height: 800px;
 }
 
 
@@ -123,17 +133,29 @@ th:after {
 .btn-add {
     text-decoration: none;
     padding: 15px;
-    color: white; 
-    background-color: black;
+    color: grey; 
+    background-color: white;
     display: inline-block;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px;	
     cursor: pointer;
     width: 250px;
     font-size: 20px;
     border: none;
+    text-decoration: none; 
+ 
+    
+    border: solid 2px;
+    border-radius: 1px;
+    padding: 5px 5px;
+    transition-duration: 100ms;
+}
+
+.btn-add:hover {
+	color: black;
 }
 
 .checking {
     margin-bottom: 25px;
 }
+
