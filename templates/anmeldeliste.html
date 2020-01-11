@@ -60,7 +60,8 @@
                 <th>Alter</th>
                 <th>Rasse</th>
                 <th>Gewinnpunkte</th> 
-                <th>Prüfung 1</th>
+                <th>Prüfungen</th> 
+                <!--<th>Prüfung 1</th>
                 <th>Prüfung 2</th>
                 <th>Prüfung 3</th>
                 <th>Prüfung 4</th>
@@ -71,10 +72,32 @@
                 <th>Prüfung 9</th>
                 <th>Prüfung 10</th>
                 <th>Prüfung 11</th>
-                <th>Prüfung 12</th>           
+                <th>Prüfung 12</th>   -->        
             </tr>
             
                 {% for einreiter in daten['reiter'].values()%}
+                <tr>
+                  <td>{{einreiter['grad']}}</td> 
+                  <td>{{einreiter['name']}}</td>  
+                  <td>{{einreiter['vorname']}}</td> 
+                  <td>{{einreiter['jahrgang']}}</td>  
+                  <td>{{einreiter['adresse']}}</td> 
+                  <td>{{einreiter['plz']}}</td>  
+                  <td>{{einreiter['ort']}}</td> 
+                  <td>{{einreiter['tel']}}</td>  
+                  <td>{{einreiter['liz_brev']}}</td>
+                  <td>{{einreiter['namepf']}}</td> 
+                  <td>{{einreiter['passnummer']}}</td>  
+                  <td>{{einreiter['geschlecht']}}</td> 
+                  <td>{{einreiter['farbe']}}</td>  
+                  <td>{{einreiter['alter']}}</td> 
+                  <td>{{einreiter['rasse']}}</td>  
+                  <td>{{einreiter['gwp']}}</td>
+                  <td>{{ einreiter['pruefungen']|join(', ') }}</td>
+                </tr>
+                {% endfor %}
+
+                <!--{% for einreiter in daten['reiter'].values()%}
                 <tr>
                   <td>{{einreiter['grad']}}</td> 
                   <td>{{einreiter['name']}}</td>  
@@ -105,7 +128,7 @@
                   <td>{{einreiter['pruefung11']}}</td>
                   <td>{{einreiter['pruefung12']}}</td>
                 </tr>
-                {% endfor %}
+                {% endfor %}-->
             
     </table>
     {% else %}
