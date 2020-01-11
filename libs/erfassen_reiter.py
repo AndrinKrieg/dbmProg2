@@ -54,3 +54,4 @@ def load_json():
 def save_to_json(daten):
     with open('data/data.json', "w") as open_file:
         json.dump(daten, open_file)
+#Alle Daten werden ins Jsonfile geschrieben
