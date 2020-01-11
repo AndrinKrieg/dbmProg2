@@ -15,8 +15,11 @@
  			<img src="{{url_for('static', filename='btglogo.jpg')}}" class="logocss">
  			<img src="{{url_for('static', filename='spstalogo.png')}}" class="logospstacss">
  		<h1>Anmeldeliste <br/>
- 		Schweizerische Pferdesport- und Traintage der Armee</h1>    
+ 		Schweizerische Pferdesport- und Traintage der Armee</h1>  
 
+<!--Hier werden die gesammelten Daten alle angegeben. Der Organisator, kann diese direkt hinauskopieren. 
+
+  Als erweiterung wäre der Arbeit wäre hier sicherlich Einschränkungsrechte eigeplant und das einbinden der Daten in eine CSV-Datei-->
     <div class="links">
         <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage</a>
         <a href="{{ url_for('reitererfassen') }}">Beginne die Anmeldung</a>
@@ -60,19 +63,7 @@
                 <th>Alter</th>
                 <th>Rasse</th>
                 <th>Gewinnpunkte</th> 
-                <th>Prüfungen</th> 
-                <!--<th>Prüfung 1</th>
-                <th>Prüfung 2</th>
-                <th>Prüfung 3</th>
-                <th>Prüfung 4</th>
-                <th>Prüfung 5</th>
-                <th>Prüfung 6</th>
-                <th>Prüfung 7</th>
-                <th>Prüfung 8</th>
-                <th>Prüfung 9</th>
-                <th>Prüfung 10</th>
-                <th>Prüfung 11</th>
-                <th>Prüfung 12</th>   -->        
+                <th>Prüfungen</th>        
             </tr>
             
                 {% for einreiter in daten['reiter'].values()%}
@@ -96,94 +87,12 @@
                   <td>{{ einreiter['pruefungen']|join(', ') }}</td>
                 </tr>
                 {% endfor %}
-
-                <!--{% for einreiter in daten['reiter'].values()%}
-                <tr>
-                  <td>{{einreiter['grad']}}</td> 
-                  <td>{{einreiter['name']}}</td>  
-                  <td>{{einreiter['vorname']}}</td> 
-                  <td>{{einreiter['jahrgang']}}</td>  
-                  <td>{{einreiter['adresse']}}</td> 
-                  <td>{{einreiter['plz']}}</td>  
-                  <td>{{einreiter['ort']}}</td> 
-                  <td>{{einreiter['tel']}}</td>  
-                  <td>{{einreiter['liz_brev']}}</td>
-                  <td>{{einreiter['namepf']}}</td> 
-                  <td>{{einreiter['passnummer']}}</td>  
-                  <td>{{einreiter['geschlecht']}}</td> 
-                  <td>{{einreiter['farbe']}}</td>  
-                  <td>{{einreiter['alter']}}</td> 
-                  <td>{{einreiter['rasse']}}</td>  
-                  <td>{{einreiter['gwp']}}</td> 
-                  <td>{{einreiter['pruefung1']}}</td>
-                  <td>{{einreiter['pruefung2']}}</td>
-                  <td>{{einreiter['pruefung3']}}</td>
-                  <td>{{einreiter['pruefung4']}}</td>
-                  <td>{{einreiter['pruefung5']}}</td>
-                  <td>{{einreiter['pruefung6']}}</td>
-                  <td>{{einreiter['pruefung7']}}</td>
-                  <td>{{einreiter['pruefung8']}}</td>
-                  <td>{{einreiter['pruefung9']}}</td>
-                  <td>{{einreiter['pruefung10']}}</td>
-                  <td>{{einreiter['pruefung11']}}</td>
-                  <td>{{einreiter['pruefung12']}}</td>
-                </tr>
-                {% endfor %}-->
             
     </table>
     {% else %}
     <h1>Keine Anmeldungen erfasst</h1>
     {% endif %}
-<!--
-<h2>Pferd 1</h2>
-{%if daten%}
-  <table>
-    <tr>
-                <th>Name</th>
-                <th>Passnummer</th>
-                <th>Geschlecht</th>
-                <th>Farbe</th>
-                <th>Alter</th>
-                <th>Rasse</th>
-                <th>Gewinnpunkte</th> 
-                <th>Prüfung 1</th>
-                <th>Prüfung 2</th>
-                <th>Prüfung 3</th>
-                <th>Prüfung 4</th>
-                <th>Prüfung 5</th>
-                <th>Prüfung 6</th>
-                <th>Prüfung 7</th>
-                <th>Prüfung 8</th>
-                <th>Prüfung 9</th>
-                <th>Prüfung 10</th>
-                <th>Prüfung 11</th>
-                <th>Prüfung 12</th>
 
-    </tr>
-                    {% for einreiter in daten['reiter'].values()%}
-                <tr>
-                  <td>{{einreiter['namepf']}}</td> 
-                  <td>{{einreiter['passnummer']}}</td>  
-                  <td>{{einreiter['geschlecht']}}</td> 
-                  <td>{{einreiter['farbe']}}</td>  
-                  <td>{{einreiter['alter']}}</td> 
-                  <td>{{einreiter['rasse']}}</td>  
-                  <td>{{einreiter['gwp']}}</td> 
-                  <td>{{einreiter['pruefung1']}}</td>
-                  <td>{{einreiter['pruefung2']}}</td>
-                  <td>{{einreiter['pruefung3']}}</td>
-                  <td>{{einreiter['pruefung4']}}</td>
-                  <td>{{einreiter['pruefung5']}}</td>
-                  <td>{{einreiter['pruefung6']}}</td>
-                  <td>{{einreiter['pruefung7']}}</td>
-                  <td>{{einreiter['pruefung8']}}</td>
-                  <td>{{einreiter['pruefung9']}}</td>
-                  <td>{{einreiter['pruefung10']}}</td>
-                  <td>{{einreiter['pruefung11']}}</td>
-                  <td>{{einreiter['pruefung12']}}</td>
-                </tr>
-                {% endfor %}
--->
     </table>
     {% else %}
     <h1>Keine Anmeldungen erfasst</h1>

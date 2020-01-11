@@ -23,7 +23,11 @@
         <a href="{{ url_for('reitererfassen') }}" class="active">Beginne die Anmeldung</a>
         <a href="{{ url_for('anmeldeliste') }}">Anmeldeliste</a>
     </div>
+<!--Die Informationen für eine Anmeldung werden hier hinzugefügt. Mit der method "POST" im Formularelement wird der Befehl dem Browser gegeben, sodass der Webserver die Daten zur Verarbeitung erhält. Im main.py wird in der def addanevent gesagt was mit den Daten gemacht wird. 
+Die Daten werden beantrag. Anschliessend wird die returned data im reiter_erfassen.py verarbeitet. 
 
+Nachdem alles eigegeben ist und man auf Absenden klickt, gelangt man auf die Bestätigungsseite. Organisatoren können auf der Hauptseite direkt das HTML 'Anmeldelsite' öffnen um die aktuelle Liste zu sehen.
+-->
 <h2>Bitte geben Sie die notwendigen Daten ein:</h2>
 <form class="new_sign_in" method="POST">
 <div class="row">
@@ -91,20 +95,6 @@
             <label><input type="checkbox" class="checking" name="pruefungen" value="nr11">&nbsp;&nbsp;Prüfung 11:&nbsp; &nbsp;&nbsp; Fahrprüfung<br/></label>
             <label><input type="checkbox" class="checking" name="pruefungen" value="nr12">&nbsp;&nbsp;Prüfung 12:&nbsp;&nbsp; &nbsp;Trainwettkampf<br/></label>
             <br/>
-
-            <!--<label><input type="checkbox" class="checking" name="pruefung1" value="nr1">&nbsp;&nbsp;Prüfung 1:&nbsp;&nbsp; &nbsp;&nbsp; Dressur Stufe 1<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung2" value="nr2">&nbsp;&nbsp;Prüfung 2:&nbsp;&nbsp; &nbsp;&nbsp; Dressur Stufe 2<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung3" value="nr3">&nbsp;&nbsp;Prüfung 3:&nbsp;&nbsp; &nbsp;&nbsp; Springen Stufe 1<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung4" value="nr4">&nbsp;&nbsp;Prüfung 4:&nbsp;&nbsp; &nbsp;&nbsp; Springen Stufe 2<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung5" value="nr5">&nbsp;&nbsp;Prüfung 5:&nbsp;&nbsp; &nbsp;&nbsp; Derby Stufe 1<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung6" value="nr6">&nbsp;&nbsp;Prüfung 6:&nbsp;&nbsp; &nbsp;&nbsp; Derby Stufe 2<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung7" value="nr7">&nbsp;&nbsp;Prüfung 7:&nbsp;&nbsp; &nbsp;&nbsp; Equipenspringen<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung8" value="nr8">&nbsp;&nbsp;Prüfung 8:&nbsp;&nbsp; &nbsp;&nbsp; Kombi Stufe 1<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung9" value="nr9">&nbsp;&nbsp;Prüfung 9:&nbsp;&nbsp; &nbsp;&nbsp; Kombi Stufe 2<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung10" value="nr10">&nbsp;&nbsp;Prüfung 10:&nbsp;&nbsp;&nbsp; Helferspringen<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung11" value="nr11">&nbsp;&nbsp;Prüfung 11:&nbsp; &nbsp;&nbsp; Fahrprüfung<br/></label>
-            <label><input type="checkbox" class="checking" name="pruefung12" value="nr12">&nbsp;&nbsp;Prüfung 12:&nbsp;&nbsp; &nbsp;Trainwettkampf<br/></label>
-            <br/>-->
 
           <input type="submit" name="" value="Absenden" class="btn-add">
         </div>

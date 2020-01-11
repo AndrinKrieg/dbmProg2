@@ -1,7 +1,13 @@
+""" erfassen_reiter.py ist meine Libary für das lesen sowie auch schreiben der jsonfile"""
+
 import json
 
-#def reiter_erfassen(grad, name, vorname, jahrgang, adresse, plz, ort, tel, liz_brev, namepf, passnummer, geschlecht, farbe, alter, rasse, gwp, pruefung1, pruefung2, pruefung3, pruefung4, pruefung5, pruefung6, pruefung7, pruefung8, pruefung9, pruefung10, pruefung11, pruefung12):
 def reiter_erfassen(form_data):
+    """
+    diese def lädt die daten der Anmeldungen aus der json file.
+    Arugmente:  File befindet sich in dbmProg2/data/data.json
+    Returns:    Dicitionary mit Daten aus reitererfassen.html wird zurückgegeben.
+    """
     json_daten = load_json()
     alle_anmeldungen = json_daten.get("reiter", {})
 
@@ -25,38 +31,6 @@ def reiter_erfassen(form_data):
         "pruefungen": form_data.getlist("pruefungen")
     }
 
-    """einreiter = {
-        "grad": grad,
-        "name": name,
-        "vorname": vorname,
-        "jahrgang": jahrgang,
-        "adresse": adresse,
-        "plz": plz,
-        "ort": ort,
-        "tel": tel,
-        "liz_brev": liz_brev,
-        "namepf": namepf,
-        "passnummer": passnummer,
-        "geschlecht": geschlecht,
-        "farbe": farbe,
-        "alter": alter,
-        "rasse": rasse,
-        "gwp": gwp,
-        "pruefung1": pruefung1,
-        "pruefung2": pruefung2,
-        "pruefung3": pruefung3,
-        "pruefung4": pruefung4,
-        "pruefung5": pruefung5,
-        "pruefung6": pruefung6,
-        "pruefung7": pruefung7,
-        "pruefung8": pruefung8,
-        "pruefung9": pruefung9,
-        "pruefung10": pruefung10,
-        "pruefung11": pruefung11,
-        "pruefung12": pruefung12,
-    }
-
-    alle_anmeldungen[passnummer] = einreiter"""
 
     alle_anmeldungen[form_data['passnummer']] = einreiter
     json_daten["reiter"] = alle_anmeldungen
@@ -64,7 +38,7 @@ def reiter_erfassen(form_data):
     save_to_json(json_daten)
     return json_daten
 
-
+#Jsonfile mit Daten wird geladen
 def load_json():
     json_daten = {}
     try:
@@ -75,7 +49,7 @@ def load_json():
         print("File not found")
 
     return json_daten
-
+#Dictionary mit allen Daten aus Json wird geladen
 
 def save_to_json(daten):
     with open('data/data.json', "w") as open_file:
