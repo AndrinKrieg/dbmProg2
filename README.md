@@ -6,7 +6,7 @@ Seit Ende September 2019 bin ich Vorstandspräsident eines Pferdesportwettbewerb
 **Idee**  
 Meine Idee ist es den Anmeldeprozess und die damit verbundenen Nebenprozessse zu digitalisieren. Ein User sollte sich mit 1-2 Pferden für Mehrere Prüfungen anmelden können. Idealerweise wird eine Liste generiert und ist dann als 'Startliste' auswertbar.
 
-**Weiterfühurng**
+**Weiterfühurng**  
 In einer Weiterführung könnte zudem die App so weiterentwickelt werden, sodass die Anmeldeliste von der Jury benutzt werden kann um die Resultate direkt (live), nach dem absolvierten Parcour, eizugeben. Diese ist wiederrum dann auch als Rangliste aufrufbar.
 
 
