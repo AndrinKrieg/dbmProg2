@@ -9,14 +9,10 @@ Meine Idee ist es den Anmeldeprozess und die damit verbundenen Nebenprozessse zu
 **Weiterfühurng**  
 In einer Weiterführung könnte zudem die App so weiterentwickelt werden, sodass die Anmeldeliste von der Jury benutzt werden kann um die Resultate direkt (live), nach dem absolvierten Parcour, eizugeben. Diese ist wiederrum dann auch als Rangliste aufrufbar.
 
+**Anforderungen**  
+- Einlesen Angaben Reiter, Pferd und Prüfungen
+- Ausgabe einer Liste für Organisatoren
+- Zurückführung auf Homepage oder Erfassung weiterer Anmeldung
 
-
-
-
-
-
-
-
-
-
-
+**Flussdiagramm**  
+![Andrins flow diagramm](andrins_flussdiagramm.JPG)
