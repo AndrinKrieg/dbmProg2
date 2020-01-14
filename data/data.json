@@ -1,1 +1,159 @@
-{"reiter": {"sd": {"grad": "12", "name": "Faeh", "vorname": "Alicia", "jahrgang": "1997", "adresse": "ASD", "plz": "as", "ort": "sdf", "tel": "sas", "liz_brev": "asd", "namepf": "asd", "passnummer": "sd", "geschlecht": "asd", "farbe": "asd", "alter": "asd", "rasse": "asd", "gwp": "asd", "pruefungen": ["nr1", "nr2", "nr6"]}, "sdf": {"grad": "76", "name": "Krieg", "vorname": "Andrin", "jahrgang": "3456", "adresse": "asd", "plz": "asd", "ort": "asdf", "tel": "asdf", "liz_brev": "sdf", "namepf": "sdf", "passnummer": "sdf", "geschlecht": "gsdf", "farbe": "gsdfg", "alter": "sdfg", "rasse": "sdf", "gwp": "sdf", "pruefungen": ["nr1", "nr2", "nr9"]}, "a": {"grad": "zhg", "name": "asdfg", "vorname": "a", "jahrgang": "a", "adresse": "a", "plz": "a", "ort": "a", "tel": "a", "liz_brev": "a", "namepf": "a", "passnummer": "a", "geschlecht": "a", "farbe": "a", "alter": "a", "rasse": "a", "gwp": "a", "pruefungen": ["nr1"]}, "q": {"grad": "q", "name": "q", "vorname": "q", "jahrgang": "q", "adresse": "q", "plz": "q", "ort": "q", "tel": "q", "liz_brev": "q", "namepf": "q", "passnummer": "q", "geschlecht": "q", "farbe": "q", "alter": "q", "rasse": "q", "gwp": "q", "pruefungen": ["nr1", "nr3"]}, "e": {"grad": "1", "name": "a", "vorname": "a", "jahrgang": "a", "adresse": "a", "plz": "a", "ort": "a", "tel": "d", "liz_brev": "f", "namepf": "wesdf", "passnummer": "e", "geschlecht": "gf", "farbe": "g", "alter": "f", "rasse": "rf", "gwp": "f", "pruefungen": ["nr1", "nr6", "nr7"]}, "d": {"grad": "s", "name": "s", "vorname": "sd", "jahrgang": "sd", "adresse": "d", "plz": "d", "ort": "d", "tel": "d", "liz_brev": "d", "namepf": "d", "passnummer": "d", "geschlecht": "d", "farbe": "d", "alter": "d", "rasse": "d", "gwp": "dd", "pruefungen": ["nr1", "nr2"]}, "as": {"grad": "as", "name": "as", "vorname": "as", "jahrgang": "as", "adresse": "as", "plz": "a", "ort": "sas", "tel": "a", "liz_brev": "sas", "namepf": "as", "passnummer": "as", "geschlecht": "as", "farbe": "as", "alter": "as", "rasse": "asas", "gwp": "as", "pruefungen": ["nr7"]}}}
+{
+  "reiter": {
+    "sd": {
+      "grad": "12",
+      "name": "Faeh",
+      "vorname": "Alicia",
+      "jahrgang": "1997",
+      "adresse": "ASD",
+      "plz": "as",
+      "ort": "sdf",
+      "tel": "sas",
+      "liz_brev": "asd",
+      "namepf": "asd",
+      "passnummer": "sd",
+      "geschlecht": "asd",
+      "farbe": "asd",
+      "alter": "asd",
+      "rasse": "asd",
+      "gwp": "asd",
+      "pruefungen": [
+        "nr1",
+        "nr2",
+        "nr6"
+      ]
+    },
+    "sdf": {
+      "grad": "76",
+      "name": "Krieg",
+      "vorname": "Andrin",
+      "jahrgang": "3456",
+      "adresse": "asd",
+      "plz": "asd",
+      "ort": "asdf",
+      "tel": "asdf",
+      "liz_brev": "sdf",
+      "namepf": "sdf",
+      "passnummer": "sdf",
+      "geschlecht": "gsdf",
+      "farbe": "gsdfg",
+      "alter": "sdfg",
+      "rasse": "sdf",
+      "gwp": "sdf",
+      "pruefungen": [
+        "nr1",
+        "nr2",
+        "nr9"
+      ]
+    },
+    "a": {
+      "grad": "zhg",
+      "name": "asdfg",
+      "vorname": "a",
+      "jahrgang": "a",
+      "adresse": "a",
+      "plz": "a",
+      "ort": "a",
+      "tel": "a",
+      "liz_brev": "a",
+      "namepf": "a",
+      "passnummer": "a",
+      "geschlecht": "a",
+      "farbe": "a",
+      "alter": "a",
+      "rasse": "a",
+      "gwp": "a",
+      "pruefungen": [
+        "nr1"
+      ]
+    },
+    "q": {
+      "grad": "q",
+      "name": "q",
+      "vorname": "q",
+      "jahrgang": "q",
+      "adresse": "q",
+      "plz": "q",
+      "ort": "q",
+      "tel": "q",
+      "liz_brev": "q",
+      "namepf": "q",
+      "passnummer": "q",
+      "geschlecht": "q",
+      "farbe": "q",
+      "alter": "q",
+      "rasse": "q",
+      "gwp": "q",
+      "pruefungen": [
+        "nr1",
+        "nr3"
+      ]
+    },
+    "e": {
+      "grad": "1",
+      "name": "a",
+      "vorname": "a",
+      "jahrgang": "a",
+      "adresse": "a",
+      "plz": "a",
+      "ort": "a",
+      "tel": "d",
+      "liz_brev": "f",
+      "namepf": "wesdf",
+      "passnummer": "e",
+      "geschlecht": "gf",
+      "farbe": "g",
+      "alter": "f",
+      "rasse": "rf",
+      "gwp": "f",
+      "pruefungen": [
+        "nr1",
+        "nr6",
+        "nr7"
+      ]
+    },
+    "d": {
+      "grad": "s",
+      "name": "s",
+      "vorname": "sd",
+      "jahrgang": "sd",
+      "adresse": "d",
+      "plz": "d",
+      "ort": "d",
+      "tel": "d",
+      "liz_brev": "d",
+      "namepf": "d",
+      "passnummer": "d",
+      "geschlecht": "d",
+      "farbe": "d",
+      "alter": "d",
+      "rasse": "d",
+      "gwp": "dd",
+      "pruefungen": [
+        "nr1",
+        "nr2"
+      ]
+    },
+    "as": {
+      "grad": "as",
+      "name": "as",
+      "vorname": "as",
+      "jahrgang": "as",
+      "adresse": "as",
+      "plz": "a",
+      "ort": "sas",
+      "tel": "a",
+      "liz_brev": "sas",
+      "namepf": "as",
+      "passnummer": "as",
+      "geschlecht": "as",
+      "farbe": "as",
+      "alter": "as",
+      "rasse": "asas",
+      "gwp": "as",
+      "pruefungen": [
+        "nr7"
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="de">
-
+<!--In meinem Header soll der User immer dieselbe Übersicht erhalten um auf die veschiedenen Seiten wechseln  zu können. Hier habe ich Sie zum ersten Mal erstellt-->
     <head>
         <meta charset="utf-8"/>
         <meta name="title" content="Anmeldung-SPSTA"/> 
@@ -19,11 +19,17 @@
         Schweizerische Pferdesport- und Traintage der Armee</h1>
     
     <div class="links">
-        <a href="{{ url_for('startseite') }}">Landing Page</a>
         <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage BTG</a>
         <a href="{{ url_for('reitererfassen') }}" class="active">Beginne die Anmeldung</a>
         <a href="{{ url_for('anmeldeliste') }}">Anmeldeliste</a>
     </div>
+
+<p style="margin: 40px; margin-right: 400px; margin-left: 400px;">Die Schweizerischen Pferdesport- und Traintage der Armee sind ein ausserdienstlicher Anlass, bei welchem sich aktive und ehemalige Armeeangehörige in verschiedenen Disziplinen des Pferdesports messen. Zusätzlich werden jedes Jahr auch die Freunde vom Grenzwachtkorps und den kantonalen Polizeikorps eingeladen.
+Die nächsten Schweizerischen Pferdesport- und Traintage der Armee finden vom
+ 25. - 27. September 2019 (Trainingstag am 25. September 2020) statt!
+
+Auf dieser Seite können Sie sich für die entsprechenden Prüfungen anzumelden.</p>
+
 <!--Die Informationen für eine Anmeldung werden hier hinzugefügt. Mit der method "POST" im Formularelement wird der Befehl dem Browser gegeben, sodass der Webserver die Daten zur Verarbeitung erhält. Im main.py wird in der def reitererfassen gesagt was mit den Daten gemacht wird. 
 Die Daten werden beantrag. Anschliessend wird die returned data im reiter_erfassen.py verarbeitet. ()
 

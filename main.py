@@ -5,18 +5,8 @@ from libs import erfassen_reiter
 
 app = Flask("anmeldeplattform SPSTA")
 
-@app.route("/")
-def startseite():
-    """
-    Summary:
-        zeigt die Startseite an: auf dieser kann man einen Reiter mit seinem Pferd anmelden.
-    
-    Returns:
-        template: Das HTML 'index.html' wird gerendert.
-    """
-    return render_template('index.html')
 
-@app.route("/reitererfassen", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def reitererfassen():
     """
     Summary:
