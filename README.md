@@ -28,6 +28,9 @@ Die Anmledelsite dient einzig dem Team der Veranstaltung sich die Anmledungen zu
 
 Die Seite dient dem User als weiterführung nach der Anmeldung.
 
+![Bild zur Beschreibung](bild_readme.JPG)
+
+
 **Flussdiagramm**  
 ![Andrins flow diagramm](andrins_flussdiagramm.JPG)
 
