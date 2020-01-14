@@ -18,9 +18,10 @@
  		Schweizerische Pferdesport- und Traintage der Armee</h1>    
 <!-- Abschlusseite nach der Anmeldung. Hier kann der User wie erwähnt nochmals zu Anmledung zurück um ein weiters Pferd (mit sich selber) anzumelden oder auch wieder zurück auf die Homepage-->
     <div class="links">
-        <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage</a>
+        <a href="{{ url_for('startseite') }}">Landing Page</a>
+        <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage BTG</a>
         <a href="{{ url_for('reitererfassen') }}">Beginne die Anmeldung</a>
-        <a href="{{ url_for('anmeldeliste') }}" class="active">Anmeldeliste</a>
+        <a href="{{ url_for('anmeldeliste') }}">Anmeldeliste</a>
     </div>
 
     <h2>Vielen Dank für die Anmeldung.</h2>

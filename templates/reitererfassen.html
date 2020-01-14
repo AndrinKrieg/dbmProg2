@@ -19,14 +19,15 @@
         Schweizerische Pferdesport- und Traintage der Armee</h1>
     
     <div class="links">
+        <a href="{{ url_for('startseite') }}">Landing Page</a>
         <a target="_blank" href="https://bernertrain.jimdo.com/pferdesport-traintage/">Homepage BTG</a>
         <a href="{{ url_for('reitererfassen') }}" class="active">Beginne die Anmeldung</a>
         <a href="{{ url_for('anmeldeliste') }}">Anmeldeliste</a>
     </div>
-<!--Die Informationen für eine Anmeldung werden hier hinzugefügt. Mit der method "POST" im Formularelement wird der Befehl dem Browser gegeben, sodass der Webserver die Daten zur Verarbeitung erhält. Im main.py wird in der def addanevent gesagt was mit den Daten gemacht wird. 
-Die Daten werden beantrag. Anschliessend wird die returned data im reiter_erfassen.py verarbeitet. 
+<!--Die Informationen für eine Anmeldung werden hier hinzugefügt. Mit der method "POST" im Formularelement wird der Befehl dem Browser gegeben, sodass der Webserver die Daten zur Verarbeitung erhält. Im main.py wird in der def reitererfassen gesagt was mit den Daten gemacht wird. 
+Die Daten werden beantrag. Anschliessend wird die returned data im reiter_erfassen.py verarbeitet. ()
 
-Nachdem alles eigegeben ist und man auf Absenden klickt, gelangt man auf die Bestätigungsseite. Organisatoren können auf der Hauptseite direkt das HTML 'Anmeldelsite' öffnen um die aktuelle Liste zu sehen.
+Nachdem alles eigegeben ist und man auf Absenden klickt, gelangt man auf die Bestätigungsseite. Organisatoren können auf der Hauptseite direkt das HTML 'Anmeldesite' öffnen um die aktuelle Liste zu sehen.
 -->
 <h2>Bitte geben Sie die notwendigen Daten ein:</h2>
 <form class="new_sign_in" method="POST">

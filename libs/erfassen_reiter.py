@@ -4,7 +4,8 @@ import json
 
 def reiter_erfassen(form_data):
     """
-    diese def lädt die daten der Anmeldungen aus der json file.
+    diese def lädt die daten der Anmeldungen in die json file. 
+    Wird mit Passnummer 'gespeichert', da diese niemals doppelt vorkommen könnte.
     Arugmente:  File befindet sich in dbmProg2/data/data.json
     Returns:    Dicitionary mit Daten aus reitererfassen.html wird zurückgegeben.
     """
@@ -31,12 +32,17 @@ def reiter_erfassen(form_data):
         "pruefungen": form_data.getlist("pruefungen")
     }
 
+    pruefung = {
+        "nr1": form_data['pruefungen']
+    }
+
 
     alle_anmeldungen[form_data['passnummer']] = einreiter
     json_daten["reiter"] = alle_anmeldungen
 
     save_to_json(json_daten)
     return json_daten
+
 
 #Jsonfile mit Daten wird geladen
 def load_json():

@@ -16,3 +16,7 @@ In einer Weiterführung könnte zudem die App so weiterentwickelt werden, sodass
 
 **Flussdiagramm**  
 ![Andrins flow diagramm](andrins_flussdiagramm.JPG)
+
+**Probleme** 
+
+-Umlaute funktionieren aus irgendeinem unerklärlichen Grund noch nicht.
