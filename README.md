@@ -14,9 +14,23 @@ In einer Weiterführung könnte zudem die App so weiterentwickelt werden, sodass
 - Ausgabe einer Liste für Organisatoren
 - Zurückführung auf Homepage oder Erfassung weiterer Anmeldung
 
+**Workflow**
+
+1. Reitererfassen
+
+Die Seite dient als Index, da einzig dessen Funktion (sich anzumelden) benötigt wird. Desshalb auch die Option im Header 'Homepage BTG'. Somit können sich Teilnehmer anmelden und anschliessend wieder auf die Hauptseite zurückkehren.
+
+2. Anmeldeliste
+
+Die Anmledelsite dient einzig dem Team der Veranstaltung sich die Anmledungen zu kopieren. Wie beschrieben, können die Daten (in einer Weiterführung) in ein Excel eingespiesen werden.
+
+3. Danke / Endseite
+
+Die Seite dient dem User als weiterführung nach der Anmeldung.
+
 **Flussdiagramm**  
 ![Andrins flow diagramm](andrins_flussdiagramm.JPG)
 
 **Probleme** 
 
--Umlaute funktionieren aus irgendeinem unerklärlichen Grund noch nicht.
+-Umlaute funktionieren aus irgendeinem unerklärlichen Grund noch nicht.	
